@@ -8,7 +8,7 @@ $e=date("h:i:s a",time());
 $f=date("l");
 
 
-$con=mysqli_connect("127.0.0.1","root","admin123","chronicle");
+$con=mysqli_connect("den1.mysql6.gear.host","chronicle1","chronicle@123","chronicle1");
 if(!$con)
 {
 echo"Error in connection";
