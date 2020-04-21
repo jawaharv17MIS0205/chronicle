@@ -37,8 +37,8 @@ float:right;
 
  <!Navigation bar>
 
-       <button type="button" class="btn btn-primary" onclick="window.location='http://localhost/program/Chronicle1/homepage.html';">Logout</button>
-	   <button type="button" class="btn btn-primary" onclick="window.location='http://localhost/program/Chronicle1/view.html';">Back</button>
+       <button type="button" class="btn btn-primary" onclick="window.location='index.html';">Logout</button>
+	   <button type="button" class="btn btn-primary" onclick="window.location='view.html';">Back</button>
       
 
 </body>
@@ -52,7 +52,7 @@ $b=$_POST["email4"];
 $c=$_POST["the-textarea"];
 $d=$_POST["datepicker"];
 
-$con=mysqli_connect("127.0.0.1","root","admin123","chronicle");
+$con=mysqli_connect("den1.mysql6.gear.host","chronicle1","chronicle@123","chronicle1");
 if(!$con)
 {
 echo"Error in connection";
