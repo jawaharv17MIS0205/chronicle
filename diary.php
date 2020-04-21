@@ -19,7 +19,7 @@ if($result)
 {
 echo "<script>
 alert('You have saved your data successfully!');
-window.location.href='http://localhost/program/Chronicle1/personal.html';
+window.location.href='personal.html';
 </script>";
 }
 else
