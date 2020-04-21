@@ -1,7 +1,7 @@
 <?php
 $a=$_POST["yemail"];
 $b=$_POST["ypass"];
-$con=mysqli_connect("127.0.0.1","root","admin123","chronicle");
+$con=mysqli_connect("den1.mysql6.gear.host","chronicle1","chronicle@123","chronicle1");
 if(!$con)
 {
 echo"Error in connection";
@@ -15,13 +15,13 @@ $d=$row['password'];
 }
 if($c==$a && $d==$b)
 {
-	header('Location: http://localhost/program/Chronicle1/personal.html'); 
+	header('Location: personal.html'); 
 }
 else
 {
 echo "<script>
 alert('Username or password is wrong');
-window.location.href='http://localhost/program/Chronicle1/homepage.html';
+window.location.href='index.html';
 </script>";
 }
 ?>
