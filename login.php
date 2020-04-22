@@ -13,10 +13,6 @@ while($row=mysqli_fetch_array($result2))
 $c=$row['email'];
 $d=$row['password'];
 }
-if($a=="jaquarjack007@gmail.com" && $b=="jawahar123")
-{
-	header('Location: admin.html');
-}
 if($c==$a && $d==$b)
 {
 	header('Location: personal.html'); 

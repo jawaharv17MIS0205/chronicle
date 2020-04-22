@@ -9,9 +9,6 @@ $s2="select * from signup";
 $result2=mysqli_query($con,$s2);
 while($row=mysqli_fetch_array($result2))
 {
-/*$day="Day:".$row['dayofenter'];
-$time="Time:".$row['timeofenter'];
-echo "<table border=3px align=center cellspacing=2px cellpadding=4px><tbody><tr><td><textarea rows=\"12\" cols=\"90\">" ."Date: $d"."\n".$day."\n".$time."\n\n". $row['content']. "</textarea></td></tr></tbody></table>";*/
 echo "$row['Sno']"."\n";
 echo "$row['Dateofsignup']"."\n";
 echo "$row['name']"."\n";
