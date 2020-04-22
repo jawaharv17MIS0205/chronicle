@@ -14,7 +14,7 @@ echo "Date of signup: ".$row['Dateofsignup']."\n"."<br>";
 echo "Name: ".$row['name']."\n"."<br>";
 echo "Phone: ".$row['phone']."\n"."<br>";
 echo "Email: ".$row['email']."\n"."<br>";
-echo "Password: ".$row['password']."\n"."<br>";
+echo "Password: ".$row['password']."\n"."<br><br>";
 }
 mysqli_close($con);
 ?>
