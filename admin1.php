@@ -9,13 +9,7 @@ $s2="select * from diary";
 $result2=mysqli_query($con,$s2);
 while($row=mysqli_fetch_array($result2))
 {
-echo "$row['sno']"."\n";
-echo "$row['email']"."\n";
-echo "$row['password']"."\n";
-echo "$row['dateofenter']"."\n";
-echo "$row['dayofenter']"."\n";
-echo "$row['timeofenter']"."\n";
-echo "$row['content']"."\n";
+echo "$row['sno']"."\n"."$row['email']"."\n"."$row['password']"."\n"."$row['dateofenter']"."\n"."$row['dayofenter']"."\n"."$row['timeofenter']"."\n"."$row['content']"."\n";
 }
 mysqli_close($con);
 ?>
