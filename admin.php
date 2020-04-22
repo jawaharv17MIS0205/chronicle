@@ -9,12 +9,12 @@ $s2="select * from signup";
 $result2=mysqli_query($con,$s2);
 while($row=mysqli_fetch_array($result2))
 {
-echo $row['Sno']."\n";
-echo $row['Dateofsignup']."\n";
-echo $row['name']."\n";
-echo $row['phone']."\n";
-echo $row['email']."\n";
-echo $row['password']."\n";
+echo "Sno: ".$row['Sno']."\n"."<br>";
+echo "Date of signup: ".$row['Dateofsignup']."\n"."<br>";
+echo "Name: ".$row['name']."\n"."<br>";
+echo "Phone: ".$row['phone']."\n"."<br>";
+echo "Email: ".$row['email']."\n"."<br>";
+echo "Password: ".$row['password']."\n"."<br>";
 }
 mysqli_close($con);
 ?>
