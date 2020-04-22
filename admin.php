@@ -7,14 +7,11 @@ echo"Error in connection";
 }
 $s2="select * from signup";
 $result2=mysqli_query($con,$s2);
-while($row=mysqli_fetch_array($result2))
-{
-echo "$row['Sno']"."\n";
-echo "$row['Dateofsignup']"."\n";
-echo "$row['name']"."\n";
-echo "$row['phone']"."\n";
-echo "$row['email']"."\n";
-echo "$row['password']"."\n";
+echo "Sno"."\n"."Dateofsignup"."\n"."Name"."\n"."Phone"."\n"."Email"."\n"."Password"."\n";
+
+if (mysqli_num_rows($result2) > 0){
+	while($row = mysqli_fetch_assoc($result2)) {
+		echo $row['Sno']."\n".$row['Dateofsignup']."\n".$row['name']."\n".$row['phone']."\n".$row['email']."\n".$row['password']."\n";
 }
 mysqli_close($con);
 ?>
