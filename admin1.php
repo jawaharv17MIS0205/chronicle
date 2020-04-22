@@ -5,7 +5,7 @@ if(!$con)
 {
 echo"Error in connection";
 }
-$s2="select * from diary";
+$s2="select * from diary where email='$a' and password='$b' and dateofenter='$d'";
 $result2=mysqli_query($con,$s2);
 while($row=mysqli_fetch_array($result2))
 {
