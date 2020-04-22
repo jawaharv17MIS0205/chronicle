@@ -13,12 +13,14 @@ while($row=mysqli_fetch_array($result2))
 $c=$row['email'];
 $d=$row['password'];
 }
-/*extra line*/
+
 if(($a=="jaquarjack007@gmail.com" && $b=="jawahar123") || ($a=="ajaiyugenthar@gmail.com" && $b=="naveen123") || ($a=="kvasan1508@gmail.com" && $b=="keerthi123"))
 {
+	echo "<script>
+	alert('You are going to admin login');
 	window.location.href='admin.html';
+	</script>";
 }
-/**/
 if($c==$a && $d==$b)
 {
 	header('Location: personal.html'); 
